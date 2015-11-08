@@ -1,0 +1,39 @@
+<template name='booksList'>
+  <div class=''>
+    <div class='wrapper'>
+      {{#if currentUser}}
+        {{#if haveData}}
+          <div class='book'>
+            <table class='table table-hover'>
+              <thead>
+                <tr>
+                  <th>Purchased</th>
+                  <th>Difficulty</th>
+                  <th>Title</th>
+                  <th>Genre</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each books}}
+                  {{> bookItem }}
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+        {{else}}
+          <div class='centerBox'>
+            <h1>There is no data.</h1>
+            <button id='addBook' class='btn btn-info'>Add Book</button>
+            <b>OR</b>
+            <button id='insertSeedData' class='btn btn-primary'>Insert Seed Data</button>
+          </div>
+        {{/if}}
+      {{else}}
+        <div class='centerBox'>
+          <h1>Please Login</h1>
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</template>

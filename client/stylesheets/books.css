@@ -1,0 +1,56 @@
+body {
+  background: #eee;
+  color: #666666;
+}
+
+.active {
+  background-color: #E1E1E1;
+}
+
+a {
+  cursor: pointer;
+}
+
+.centerBox {
+  text-align: center;
+}
+
+td {
+  vertical-align: middle !important;
+}
+
+.titleLink {
+  color: #535353;
+  font-size: 15px;
+}
+
+.centerTd {
+  text-align: center;
+}
+
+.search-box {
+  display: none;
+}
+
+.search-form {
+  max-width: 500px !important;
+  margin: auto !important;
+}
+
+.new-form {
+  max-width: 500px !important;
+  margin: 3px auto !important;
+}
+
+.new-box {
+  display: none;
+}
+
+.input-genre {
+  display: none;
+}
+
+.highLight {
+  /*background-color: #6DAAE7;
+  font-weight: bold;*/
+}

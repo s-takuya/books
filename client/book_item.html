@@ -1,0 +1,19 @@
+<template name='bookItem'>
+  <tr id='{{ _id }}'>
+    <td>
+      <label class='btn {{ purchasedStatusBtn }} toggleStatus'>{{ purchased }}</label>
+    </td>
+    <td>
+      {{ difficultyRate }}
+    </td>
+    <td>
+      <a href='{{ url }}' class="titleLink" target='_blank'>{{ title }}</a>
+    </td>
+    <td>
+      {{ genre }}
+    </td>
+    <td class='centerTd'>
+      <a href="" class='deleteBook' ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+    </td>
+  </tr>
+</template>

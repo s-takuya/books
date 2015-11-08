@@ -1,0 +1,26 @@
+<template name='header'>
+  <nav class='navbar navbar-default' role='navigation'>
+    <div class='navbar-header'>
+      <a class='navbar-brand icon'>books</a>
+    </div>
+    <div class='collapse navbar-collapse' id='navigation'>
+      {{#if currentUser}}
+        <ul class='nav navbar-nav'>
+          <li>
+            <a class='toggleNew' accesskey='n'>New</a>
+          </li>
+          <li>
+            <a class='toggleSearch' accesskey='s'>Search</a>
+          </li>
+        </ul>
+      {{/if}}
+      <ul class='nav navbar-nav navbar-right'>
+        {{#if currentUser}}
+          <li><a class='optionNotYet'>Not Yet <span class="badge">{{ notYet }}</span></a></li>
+          <li><a class='optionPurchased'>Purchased <span class="badge">{{ purchased }}</span></a></li>
+        {{/if}}
+        {{> loginButtons }}
+      </ul>
+    </div>
+  </nav>
+</template>

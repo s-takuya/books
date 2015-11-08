@@ -1,0 +1,22 @@
+<template name='newBook'>
+  <div class='centerBox'>
+    <input type='text' class='form-control new-form' name='title' placeholder='Title'>
+    <input type='text' class='form-control new-form' name='url' placeholder='Url'>
+    <input type='text' class='form-control new-form input-genre' name='genre' placeholder='Genre'>
+    <select class="form-control new-form select-genre">
+      <option value=''>Genre</option>
+      {{#each genres}}
+        <option value='{{ this }}'>{{ this }}</option>
+      {{/each}}
+      <option value='addGenre'>Add Genre</option>
+    </select>
+    <select class="form-control new-form select-difficulty">
+      <option value=''>Difficulty</option>
+      <option value='0'>☆</option>
+      <option value='1'>★</option>
+      <option value='2'>★★</option>
+      <option value='3'>★★★</option>
+    </select>
+    <button type='button' class='btn btn-info btn-block new-form' id='createBook' style='max-width:500px'>Create</button>
+  </div>
+</template>
