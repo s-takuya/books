@@ -1,2 +1,3 @@
 # books
-## jun-books.meteor.com
+
+<jun-books.meteor.com>
